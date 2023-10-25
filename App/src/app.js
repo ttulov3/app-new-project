@@ -1,40 +1,19 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
+import Familia from './components/relacao/Familia';
+import Membros from './components/relacao/Membros';
 
-{/*import Comp, { Comp2, Comp3 } from './Components/Multiplos';
-import Primeiro from './Components/Primeiro';
-import MixMax from './Components/MixMax';
-import Aleatorio from './Components/Aleatorio';
-import Titulo from './Components/Titulo';
-import Botao from './Components/Botao';
-*/}
-
-import Contador from './contador';
 
 export default function App() { 
   return (
     <SafeAreaView style={styles.container}>
-    <Contador inicial={100} passo={2}/>  
-     
-      
-
-      
-      {/*
-       <Botao/>
-      <Titulo principal="Titulo" secundario="Subtitulo"/>
-      <Aleatorio min={1} max={60}/>
-    <Aleatorio min={1} max={60}/>
-    <Aleatorio min={1} max={60}/>
-    <Aleatorio min={1} max={60}/>
-    <Aleatorio min={1} max={60}/>
-    <Aleatorio min={1} max={60}/>
-      <MixMax min={2} max={20 }/>
-      <MixMax min={15} max={65 }/>
-      
-      <Comp />
-      <Comp2 />
-      <Comp3 />
-  <Primeiro />*/}
+      <Familia>
+      <Membros nome="Luiza" sobrenome="Silva"/>
+      <Membros nome="Arthur" sobrenome="Silva"/>
+      </Familia>
+      <Familia>
+        <Membros nome="João" sobrenome="Silva"/>
+      </Familia>
     </SafeAreaView>
   );
 }
