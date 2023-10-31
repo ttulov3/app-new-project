@@ -1,19 +1,12 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
-import Familia from './components/relacao/Familia';
-import Membros from './components/relacao/Membros';
 
+import ListaProdutosV2 from './components/Produto/ListaProdutosV2.js';
 
 export default function App() { 
   return (
     <SafeAreaView style={styles.container}>
-      <Familia>
-      <Membros nome="Luiza" sobrenome="Silva"/>
-      <Membros nome="Arthur" sobrenome="Silva"/>
-      </Familia>
-      <Familia>
-        <Membros nome="João" sobrenome="Silva"/>
-      </Familia>
+      <ListaProdutosV2/>
     </SafeAreaView>
   );
 }
