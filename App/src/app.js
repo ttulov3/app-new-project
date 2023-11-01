@@ -1,12 +1,15 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
 
-import ListaProdutosV2 from './components/Produto/ListaProdutosV2.js';
+import Quadrado from './components/Layout/Quadrado';
 
 export default function App() { 
   return (
     <SafeAreaView style={styles.container}>
-      <ListaProdutosV2/>
+      <Quadrado cor="#009"/>
+      <Quadrado cor="#007"/>
+      <Quadrado cor="#005"/>
+      <Quadrado cor="#003"/>
     </SafeAreaView>
   );
 }
